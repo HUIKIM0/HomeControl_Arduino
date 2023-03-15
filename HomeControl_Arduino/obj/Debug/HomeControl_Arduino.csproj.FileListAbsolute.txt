@@ -8,3 +8,4 @@ D:\dev\C#Work\HomeControl_Arduino\HomeControl_Arduino\obj\Debug\HomeControl_Ardu
 D:\dev\C#Work\HomeControl_Arduino\HomeControl_Arduino\obj\Debug\HomeControl_Arduino.csproj.CoreCompileInputs.cache
 D:\dev\C#Work\HomeControl_Arduino\HomeControl_Arduino\obj\Debug\HomeControl_Arduino.exe
 D:\dev\C#Work\HomeControl_Arduino\HomeControl_Arduino\obj\Debug\HomeControl_Arduino.pdb
+D:\dev\C#Work\HomeControl_Arduino\HomeControl_Arduino\obj\Debug\HomeControl_Arduino.FormHome.resources

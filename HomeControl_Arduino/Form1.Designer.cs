@@ -32,8 +32,10 @@ namespace HomeControl_Arduino
             this.label1 = new System.Windows.Forms.Label();
             this.cboxSelectPort = new System.Windows.Forms.ComboBox();
             this.btnConnect = new System.Windows.Forms.Button();
-            this.btnON = new System.Windows.Forms.Button();
-            this.btnOFF = new System.Windows.Forms.Button();
+            this.btnDisconnect = new System.Windows.Forms.Button();
+            this.label_status = new System.Windows.Forms.Label();
+            this.richTextBox_received = new System.Windows.Forms.RichTextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -66,33 +68,52 @@ namespace HomeControl_Arduino
             this.btnConnect.UseVisualStyleBackColor = true;
             this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
-            // btnON
+            // btnDisconnect
             // 
-            this.btnON.Location = new System.Drawing.Point(15, 97);
-            this.btnON.Name = "btnON";
-            this.btnON.Size = new System.Drawing.Size(103, 32);
-            this.btnON.TabIndex = 7;
-            this.btnON.Text = "켜기";
-            this.btnON.UseVisualStyleBackColor = true;
-            this.btnON.Click += new System.EventHandler(this.btnON_Click);
+            this.btnDisconnect.Location = new System.Drawing.Point(124, 97);
+            this.btnDisconnect.Name = "btnDisconnect";
+            this.btnDisconnect.Size = new System.Drawing.Size(101, 32);
+            this.btnDisconnect.TabIndex = 8;
+            this.btnDisconnect.Text = "연결끄기";
+            this.btnDisconnect.UseVisualStyleBackColor = true;
+            this.btnDisconnect.Click += new System.EventHandler(this.btnDisconnect_Click);
             // 
-            // btnOFF
+            // label_status
             // 
-            this.btnOFF.Location = new System.Drawing.Point(124, 97);
-            this.btnOFF.Name = "btnOFF";
-            this.btnOFF.Size = new System.Drawing.Size(101, 32);
-            this.btnOFF.TabIndex = 8;
-            this.btnOFF.Text = "끄기";
-            this.btnOFF.UseVisualStyleBackColor = true;
-            this.btnOFF.Click += new System.EventHandler(this.btnOFF_Click);
+            this.label_status.AutoSize = true;
+            this.label_status.Location = new System.Drawing.Point(15, 159);
+            this.label_status.Name = "label_status";
+            this.label_status.Size = new System.Drawing.Size(45, 15);
+            this.label_status.TabIndex = 9;
+            this.label_status.Text = "label2";
+            // 
+            // richTextBox_received
+            // 
+            this.richTextBox_received.Location = new System.Drawing.Point(342, 46);
+            this.richTextBox_received.Name = "richTextBox_received";
+            this.richTextBox_received.Size = new System.Drawing.Size(190, 138);
+            this.richTextBox_received.TabIndex = 10;
+            this.richTextBox_received.Text = "";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(124, 179);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(137, 41);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "form연결테스트용";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(239, 159);
-            this.Controls.Add(this.btnOFF);
-            this.Controls.Add(this.btnON);
+            this.ClientSize = new System.Drawing.Size(1100, 503);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.richTextBox_received);
+            this.Controls.Add(this.label_status);
+            this.Controls.Add(this.btnDisconnect);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.cboxSelectPort);
             this.Controls.Add(this.label1);
@@ -109,8 +130,10 @@ namespace HomeControl_Arduino
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cboxSelectPort;
         private System.Windows.Forms.Button btnConnect;
-        private System.Windows.Forms.Button btnON;
-        private System.Windows.Forms.Button btnOFF;
+        private System.Windows.Forms.Button btnDisconnect;
+        private System.Windows.Forms.Label label_status;
+        private System.Windows.Forms.RichTextBox richTextBox_received;
+        private System.Windows.Forms.Button button1;
     }
 }
 
